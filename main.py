@@ -4,4 +4,5 @@ if __name__=="__main__":
     print("Its work")
 
     #print(FormOne.ClassFormOne().getTestIput())
-    testingPy.StartFile().getResalt()
+    obj = FormOne.ClassFormOne()
+    testingPy.StartFile(obj.getTestInput(), obj.getTestOutput()).getResalt()

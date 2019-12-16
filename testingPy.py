@@ -1,6 +1,6 @@
 import subprocess as sub
 import os, time
-import FormOne
+
 class StartProg:
     def __init__(self, pyfile, in_date):
         self.__pyfile = pyfile
@@ -17,9 +17,9 @@ class StartProg:
         self.workProg(self.__pyfile, self.__indate)
         return self.__out_date
 class StartFile:
-    def __init__(self):
-        self.inp = FormOne.ClassFormOne().getTestInput()
-        self.out_orgin = FormOne.ClassFormOne().getTestOutput()
+    def __init__(self, testInput, testOutput):
+        self.inp = testInput
+        self.out_orgin = testOutput
         self.out = []
         self.files = os.listdir("pyfile")
         self.getProg()
