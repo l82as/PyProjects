@@ -8,7 +8,7 @@ class ClassFormOne:
         self.readTest()
     def geTestDate(self):
         try:
-            self.__listDirectory = os.listdir("case")
+            self.__listDirectory = os.listdir("case/case4/")
         except:
             print("No find direcotry 'Case'")
     def getDir(self):
@@ -16,8 +16,8 @@ class ClassFormOne:
         return self.__listDirectory
     def readTest(self):
         self.geTestDate()
-        fin = open("case/" + self.__listDirectory[0], 'r')
-        fout = open("case/" + self.__listDirectory[1],"r")
+        fin = open("case/case4/" + self.__listDirectory[0], 'r')
+        fout = open("case/case4/" + self.__listDirectory[1],"r")
         for i in fin:
             self.__test_input.append(i)
         for i in fout:
