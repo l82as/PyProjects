@@ -1,6 +1,5 @@
-import testingPy
 import os
-class ClassFormOne:
+class ClassForFour:
     def __init__(self):
         self.__listDirectory = []
         self.__test_input = []
