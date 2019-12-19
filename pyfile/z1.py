@@ -9,5 +9,5 @@ for i in range(3):
 if log:
     print("Да")
 else:
-    print("Нет")
+    print("no")
 

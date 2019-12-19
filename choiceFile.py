@@ -1,5 +1,5 @@
 import os
-import FormFour, testingPy
+import FormFour, FormOne, testingPy
 
 class SelectFile:
     def __init__(self, direct):
@@ -15,3 +15,5 @@ class SelectFile:
             if i[i.rfind(".") - 1] == "4":
                 obj = FormFour.ClassForFour()
                 testingPy.StartFile(i,obj.getTestInput(), obj.getTestOutput()).getResalt()
+            if i[i.rfind(".") - 1] == "1":
+                FormOne.QuestOne("z1.py")

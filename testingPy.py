@@ -33,7 +33,7 @@ class StartFile:
             self.out.append(res)
             if round(abs(coun_time), 10) < 3:
                 print("test", count, "passed", "\ninput =", j.strip(), "output =", res)
-                print("  run time =", abs(coun_time))
+                print("  run time =", abs(round(coun_time, 15)))
             else:
                 print("test", count, "passed", "\ninput =", j.strip(), "RUN TIME ERROR")
 
@@ -43,4 +43,4 @@ class StartFile:
         for i in range(len(self.out_orgin)):
             if self.out_orgin[i] == self.out[i]:
                 count += 1
-        print("right tests =", count)
+        print("question 4  right tests =", count, "\n"*3)
