@@ -1,22 +1,22 @@
 import os
-class ClassForFour:
+class ClassForTwo:
     def __init__(self):
         self.__listDirectory = []
         self.__test_input = []
         self.__test_output = []
         self.readTest()
-    def geTestDate(self):
+    def getTestDate(self):
         try:
-            self.__listDirectory = os.listdir("case/case4/")
+            self.__listDirectory = os.listdir("case/case2/")
         except:
             print("No find direcotry 'Case'")
     def getDir(self):
-        self.geTestDate()
+        self.getTestDate()
         return self.__listDirectory
     def readTest(self):
-        self.geTestDate()
-        fin = open("case/case4/" + self.__listDirectory[0], 'r')
-        fout = open("case/case4/" + self.__listDirectory[1],"r")
+        self.getTestDate()
+        fin = open("case/case2/" + self.__listDirectory[0], 'r')
+        fout = open("case/case2/" + self.__listDirectory[1],"r")
         for i in fin:
             self.__test_input.append(i)
         for i in fout:

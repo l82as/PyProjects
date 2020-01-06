@@ -43,4 +43,4 @@ class StartFile:
         for i in range(len(self.out_orgin)):
             if self.out_orgin[i] == self.out[i]:
                 count += 1
-        print("question 4  right tests =", count, "\n"*3)
+        print("right tests =", count, "\n"*3)
